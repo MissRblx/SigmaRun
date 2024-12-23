@@ -15,7 +15,7 @@ if okarunslasheffect then
     local character = game.Players.LocalPlayer.Character
     if character then
         -- Wait for character parts to be loaded
-        local shoulder = character:WaitForChild("Torso")
+        local shoulder = character:WaitForChild("Head")
 
         if shoulder then
             -- Parent the okarunslasheffect to the workspace
