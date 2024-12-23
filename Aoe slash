@@ -1,0 +1,274 @@
+local assetId = 72891544399694 
+local soundId = "rbxassetid://0" -- Sound ID (replace if needed)
+
+-- Load the okarunslasheffect (Folder)
+local okarunslasheffect = game:GetObjects("rbxassetid://" .. assetId)[1]
+
+-- Create and play sound
+local sound = Instance.new("Sound")
+sound.SoundId = soundId
+sound.Parent = game.Workspace
+sound:Play()
+
+-- Ensure the okarunslasheffect was loaded properly
+if okarunslasheffect then
+    local character = game.Players.LocalPlayer.Character
+    if character then
+        -- Wait for character parts to be loaded
+        local shoulder = character:WaitForChild("Torso")
+
+        if shoulder then
+            -- Parent the okarunslasheffect to the workspace
+            okarunslasheffect.Parent = workspace
+
+            -- Iterate through all parts in the folder and position them
+            for _, part in pairs(okarunslasheffect:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    -- Position the part relative to the right arm
+                    part.Position = shoulder.Position + Vector3.new(0, 0, 0) -- Adjust offset if necessary
+                    part.CanCollide = false -- Disable collision
+                    part.Anchored = false    -- Anchor parts to keep them in place
+
+                    -- Create a weld for each part
+                    local weld = Instance.new("Weld")
+                    weld.Part0 = shoulder -- The part you're welding to
+                    weld.Part1 = part -- The part you're welding
+                    weld.C0 = CFrame.new(0, 1, 0) * CFrame.Angles(0, 0, 0)
+                    weld.Parent = part -- Parent the weld to the part being welded
+                    
+                   
+                end
+            end
+        end
+    end
+end
+
+local l = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage
+l.Assets:Destroy()
+l.GarouEffect:Destroy()
+l.KJ:Destroy()
+l.Modules:Destroy()
+l.Okarun:Destroy()
+
+
+local b = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun
+b.Cam:Destroy()
+b.FakeArm:Destroy()
+b.FinisherSlash:Destroy()
+b.M5:Destroy()
+b.S3:Destroy()
+b.SK:Destroy()
+b.WolfHeadRoblox:Destroy()
+b.hdkEffect:Destroy()
+
+
+local a = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun
+a.BOOMSMOKEHAHA:Destroy()
+a.C:Destroy()
+a.Emitline:Destroy()
+a.FirstJump:Destroy()
+a.FinalJump:Destroy()
+a.Jumpyayaya:Destroy()
+a.KickYayaya:Destroy()
+a.Land:Destroy()
+a.RAHHH:Destroy()
+a.SlideCut:Destroy()
+a.Spin:Destroy()
+a.Spinyayay:Destroy()
+a.TP:Destroy()
+a.TorsoEffect:Destroy()
+a.TrailSpin:Destroy()
+a.YAFDFDFA:Destroy()
+a.armyaya:Destroy()
+a.eyeeeee:Destroy()
+a.footyaya:Destroy()
+a.ft:Destroy()
+a.landair:Destroy()
+a.punch:Destroy()
+a.random:Destroy()
+a.step:Destroy()
+a.wth:Destroy()
+
+
+local m = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources
+m.DashSmoke:Destroy()
+m.Windhit:Destroy()
+m.groundSlam:Destroy()
+
+local p = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources
+p.BarragArm:Destroy()
+p.CameraRig:Destroy()
+p.Rig:Destroy()
+
+local n = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["Plane.005"]
+n:Destroy()
+
+
+local ungroup = workspace["Okarun giveaway ROBLOX STUDIO :)"]["*ungroup* this and Put in all of your dummys"]
+ungroup:Destroy()
+
+
+local serverscript = workspace["Okarun giveaway ROBLOX STUDIO :)"].ServerScriptService
+serverscript:Destroy()
+
+
+local startercs = workspace["Okarun giveaway ROBLOX STUDIO :)"].StarterCharacterScripts
+startercs:Destroy()
+
+
+local starterpack = workspace["Okarun giveaway ROBLOX STUDIO :)"].StarterPack
+starterpack:Destroy()
+
+
+local starterps = workspace["Okarun giveaway ROBLOX STUDIO :)"].StarterPlayerScripts
+starterps:Destroy()
+
+
+local triple = workspace["Okarun giveaway ROBLOX STUDIO :)"].workspace
+triple.IgnoreInstances:Destroy()
+triple.Map:Destroy()
+triple.Thrown:Destroy()
+
+
+local niggi = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage
+niggi.Animation:Destroy()
+niggi.BoatTween:Destroy()
+niggi.MeshFlipbooks:Destroy()
+niggi.Ragdoll:Destroy()
+niggi.Raycast:Destroy()
+niggi.Trove:Destroy()
+niggi.Util:Destroy()
+niggi.Velocity:Destroy()
+
+
+local align = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.alignPosition
+align:Destroy()
+
+
+local letterbox = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources["CamRigWithLetterBox "]
+letterbox:Destroy()
+
+
+local shockwave = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Shockwave
+shockwave:Destroy()
+
+
+local mainserver = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.MainServerFunction
+mainserver:Destroy()
+
+
+local capek = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Replication
+capek:Destroy()
+
+
+local breakdance = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun.breakdance
+breakdance:Destroy()
+
+
+local fov = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun
+fov.SSFOV:Destroy()
+fov.counterFOV:Destroy()
+fov.hdkFOV:Destroy()
+fov.ultimateFOV:Destroy()
+
+
+local walk = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun.Walking
+walk:Destroy()
+
+
+local windo = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["AirWindo (Enabled 0 - 0:24)"]
+windo:Destroy()
+
+
+local BT = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["BiteThrow (Emit 0:25)"]
+BT:Destroy()
+
+
+local BTN = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["Bitten (Emit 0:04)"]
+BTN:Destroy()
+
+
+local Fupp = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["FinisherUpper (Emit)"]
+Fupp:Destroy()
+
+
+local Hitto = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["Hit (Emit 0:30)"]
+Hitto:Destroy()
+
+
+local KSU = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["KickStartUp (Emit 0:14)"]
+KSU:Destroy()
+
+
+local legslam = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["LegSlam (0:60)"]
+legslam:Destroy()
+
+
+local PFUpp = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["PreFinisherUpper (Emit)"]
+PFUpp:Destroy()
+
+
+local PreIm = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["PreImpact (Enabled 0:23 - 0:31 )"]
+PreIm:Destroy()
+
+
+local PreImS = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["PreImpactS (Emit)"]
+PreImS:Destroy()
+
+
+local PreUpp = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["PreUppercut (Emit)"]
+PreUpp:Destroy()
+
+
+local PreUppFlash = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["PreUppercutFlash (Enabled)"]
+PreUppFlash:Destroy()
+
+
+local SHit = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["ShoulderHit (Emit 0:30)"]
+SHit:Destroy()
+
+local SIm = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["ShoulderImpact (Emit 0:40)"]
+SIm:Destroy()
+
+
+local strongP1 = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["StrongPunchy (Emit)1"]
+strongP1:Destroy()
+
+
+local strongP2 = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["StrongPunchy (Emit)2"]
+strongP2:Destroy()
+
+
+local UppPunch = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["UpperPunch (Emit)"]
+UppPunch:Destroy()
+
+
+local UppPunchIm = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun["UpperPunchImpact (Emit) Start"]
+UppPunchIm:Destroy()
+
+
+local imframe1 = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun.ImpactFrame
+imframe1:Destroy()
+
+
+local imframe2 = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun.ImpactFrame2
+imframe2:Destroy()
+
+
+local idontknow = workspace["Okarun giveaway ROBLOX STUDIO :)"].workspace.Live
+idontknow:Destroy()
+
+
+local anim1 = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun.SavageStrikeCam
+anim1:Destroy()
+
+
+local anim2 = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun.Wolf
+anim2:Destroy()
+
+
+local idkthis = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Emit
+idkthis:Destroy()
+
+local redeye = workspace["Okarun giveaway ROBLOX STUDIO :)"].ReplicatedStorage.Resources.Okarun.Emit["2"]
+redeye:Destroy()
