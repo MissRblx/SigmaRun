@@ -33,7 +33,7 @@ if okarunslasheffect then
                     local weld = Instance.new("Weld")
                     weld.Part0 = shoulder -- The part you're welding to
                     weld.Part1 = part -- The part you're welding
-                    weld.C0 = CFrame.new(0, 1, 0) * CFrame.Angles(0, 0, 0)
+                    weld.C0 = CFrame.new(0, 2.3, 0) * CFrame.Angles(0, 0, 0)
                     weld.Parent = part -- Parent the weld to the part being welded
                     
                    
